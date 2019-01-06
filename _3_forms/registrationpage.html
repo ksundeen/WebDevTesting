@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>Register</title>
+    </head>
+    <body>
+        <h1>Register!</h1>
+        <form>
+            <fieldset>
+                <!-- Name -->
+                <label for="fname">First Name</label>
+                <input id="fname" name="fname" type="text" placeholder="John" required>
+                <label for="lname">Last Name</label>
+                <input id="lname" name="lname" type="text" placeholder="Smith" required>
+            </fieldset>
+            <fieldset>
+                <!-- Gender -->
+                <label for="male">Male: </label>
+                <input id="male" name="gender" type="radio" >
+                <label for="female">Female: </label>
+                <input id="female" name="gender" type="radio" >   
+                <label for="na">Choose not to answer: </label>
+                <input id="na" name="gender" type="radio">                        
+            </fieldset>
+            </fieldset>
+            <fieldset>
+                <!-- Email/Password -->
+                <label for="email">Email: </label>
+                <input id="email" name="email" type="email" placeholder="your email" required>
+                <label for="password">Password: </label>
+                <input id="password" name="password" type="password" placeholder="your password" pattern=".{5,10}" title="5-10 characters are required" required>
+            <fieldset>
+                <!-- Birthday -->
+                <label for="month">Birthday</label>
+                <select name="month" id="month">
+                    <option>Mon</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>Aug</option>
+                    <option>Sept</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>
+                <select name="day">
+                    <option>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>    
+                <select name="yearGroup">  
+                    <option>Year</option>
+                    <option>< 1971</option>
+                    <option>1970 - 1980</option>
+                    <option>1981 - 1990</option>
+                    <option>1991 - 2000</option>
+                    <option>2000 - 2010</option>
+                    <option>2011 - 2018</option>
+                </select>  
+                </fieldset>            
+            <fieldset>
+                <label for="conditions">I agree to these terms and conditions</label>
+                <input type=checkbox>
+            </fieldset>
+            <button>Submit</button>
+        </form>
+        
+    </body>
+</html>

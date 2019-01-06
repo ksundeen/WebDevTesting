@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>Form Demo</title>
+    </head>
+    <body>
+        <!-- Input Form -->
+        <!-- action - where data are sent -->
+        <!-- method - which HTTP method is sent as (post/get) -->
+        <!-- name attribute - sends to a URL query string -->
+        <form action="http:www.google.com" method="GET">
+            <label>Username: 
+                <input name="username" type="text" placeholder="username" required>
+            </label>
+            <label>Password: 
+                <input name="password" type="password" placeholder="password" required>
+            </label>
+            <label>Email: 
+                    <input name="username" type="email" placeholder="username" required>
+                </label>            
+            <input type="submit">
+        </form>
+
+        <!-- Alternative way to improve UX for screenreaders; connects for/id of inputs -->
+        <p></p>
+        <form> <!--</form> action="http:www.google.com" method="GET">-->
+            <label for="username">Username: </label>
+            <input id="username" name="username" type="text" placeholder="username">
+            <label for="password">Password: </label>
+            <input id="password" name="password" type="password" placeholder="password">
+            <input type="submit">
+        </form>     
+        
+        <!-- Assigning value submited from a form; name in inputs links them as 1/0 options -->
+        <h3>Submitting Other Options</h3>
+        <form> 
+            <label for="cats">Cats</label>
+            <input value="DOGS" id="cats" name="petChoice" type="radio">
+            <label for="dogs">Dogs</label>
+            <input value="CATS" id="dogs" name="petChoice" type="radio">
+
+        <h4> Select Dropdowns </h4>
+            <select name="animalColor">
+                <option>Orange</option>
+                <option>Black</option>
+            </select>
+            <textarea></textarea>
+            <button>Go!</button>
+        </form>
+        
+    </body>
+</html>
