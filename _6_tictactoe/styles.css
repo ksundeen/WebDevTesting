@@ -1,12 +1,27 @@
 html {
     background: rgb(241, 234, 234);
 }
-
-.row1 > td:nth-of-type(2) {
-    border-right: 1px solid black;
-    margin: 0 auto;
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 350%
+}
+td {
+    height: 100px;
+    width: 100px;
 }
 
+.vertical {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.horizontal {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
 table {
-    width: 50%;
+    /* width: 50%; */
+    text-align: center;
+    margin: auto;
+
 }
